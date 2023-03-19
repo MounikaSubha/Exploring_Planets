@@ -1,0 +1,17 @@
+// first we will understand the data , so read the data.
+// fs system cannot read csv files or do not know(comma seperated files)
+// going for thrid party package : from NPM  : called csv-parse 
+// csv-parse is a stream based parser uses stream API to read the csv file 
+// but parse from csv-parse package(knws streams) do not know file system or cannot directly deal with it
+// so node's buit in file system package fs can be used
+// fs has a functionality to read file text/string data and convert into readable stream of data
+// this functionality returns eventemitter which has events and we can react to them 
+// in here: we get streams of bytes and we need them as an array or object form to analyse them
+// we make use of parse(), which returns stream of data as key value pair objects or as array
+// we use pipe() which takes streambale data as input and passes it over to a parse() function 
+// source.pipe(destination)  or streamableData.pipe(parse()) or readable.pipe(writable)
+// result : data that can be modified upon or anlaysed upon as object or array form.
+// tell the parser that we have comments starting as # and give key:value pairs and not as rows
+// converted : streambale bytes of data into key:value pair notation
+// lets find the habitable planets [3 critical properties 1. if its planet in first place 2. stellar flux is in range 3. radius]
+//lets explore and filter out the names of our habitable planets
