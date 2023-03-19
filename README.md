@@ -9,9 +9,9 @@ Visit for more information - https://nodejs.org/api/documentation.html  https://
 https://exoplanets.nasa.gov/search-for-life/are-we-alone/
 # link for information on habitable planets
 Habitable planets are filtered using the below criteria: 
-KOI_DISPOSITION : which filters the bodies which are confirmed as planets - which have status as CONFIRMED
-KOI_INSOL: key pieces of information we have available for extrasolar planets to assess their potential habitability is their effective stellar flux,is 
-calculated using information about a planet’s orbit and the luminosity of its sun. 
+KOI_DISPOSITION : which filters the bodies which are confirmed as planets - which have status as CONFIRMED.
+KOI_INSOL: key pieces of information we have available for extrasolar planets to assess their potential habitability is their effective stellar flux.
+This is calculated using information about a planet’s orbit and the luminosity of its sun. 
 If this effective stellar flux falls within a range corresponding to the limits of a sun’s habitable zone (HZ),this planet has met one of the basic criteria for potential habitability.
 KOI_PRAD: Radius of the planet (Checked against the Earth's size)
 https://phl.upr.edu/projects/habitable-exoplanets-catalog
